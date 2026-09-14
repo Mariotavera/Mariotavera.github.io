@@ -141,7 +141,7 @@ display: flex;
 
 .md-typeset p {
   text-align: justify !important;
-  text-justify: inter-word; /* Distribución uniforme de espacios */
+  text-justify: inter-word; 
   line-height: 1.6;
   margin-bottom: 1.25em;
 }
