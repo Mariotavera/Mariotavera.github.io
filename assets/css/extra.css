@@ -1,6 +1,6 @@
 .profile-photo {
-  border-radius: 8px; /* Cambia a 0px si la quieres completamente cuadrada */
-    width: 350px;        /* Ajusta el tamaño según tu preferencia */
+  border-radius: 8px; 
+    width: 350px;       
     height: auto;
     object-fit: cover;
     border-radius: 8px;
@@ -44,7 +44,6 @@ display: flex;
   margin-top: 0.5rem;
 }
 
-/* About Me Section */
 .about-image {
   width: 100%;
   margin: 1rem 0;
@@ -59,7 +58,6 @@ display: flex;
   display: block;
 }
 
-/* Align buttons side-by-side */
 .about-actions {
   display: flex;
   gap: 1rem;
@@ -76,7 +74,6 @@ display: flex;
   }
 }
 
-/* Timeline on the Experience page */
 .timeline {
   padding-left: 1.75rem;
   border-left: 3px solid var(--md-primary-fg-color--light);
@@ -103,12 +100,11 @@ display: flex;
   margin-top: 0;
 }
 
-/* Skills grid cards on the Home page */
 .md-typeset .grid.cards > ul > li {
   background-color: #f0f7ff;
 }
 
-/* Project cards on the Projects gallery page */
+
 .project-card {
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 8px;
@@ -129,20 +125,20 @@ display: flex;
   margin-bottom: 0.75rem;
 }
 
-/* Fuerza la cuadrícula a tener 2 columnas estricta en pantallas medianas y grandes */
+
 .projects-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 1.5rem;
 }
 
-/* En celulares se adapta automáticamente a 1 columna */
+
 @media screen and (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr !important;
   }
 }
 
-/* Justificar el texto de los párrafos en todo el sitio */
+
 .md-typeset p {
   text-align: justify !important;
   text-justify: inter-word; /* Distribución uniforme de espacios */
@@ -150,12 +146,12 @@ display: flex;
   margin-bottom: 1.25em;
 }
 
-/* Opcional: si solo quieres justificar las páginas de contenido/proyectos */
+
 .md-content p {
   text-align: justify !important;
 }
 
-/* 1. Asegurar que las tarjetas sean contenedores Flex verticales del mismo alto */
+
 .grid-container .card,
 .project-card {
     display: flex;
@@ -163,16 +159,16 @@ display: flex;
     height: 100%;
 }
 
-/* 2. Forzar al área del botón/pie de tarjeta a alinearse abajo */
+
 .project-card .btn-container,
 .project-card a.button,
 .project-card .view-project-btn {
-    margin-top: auto; /* Esto empuja el botón al fondo de la tarjeta */
+    margin-top: auto; 
 }
 
-/* 3. Fijar una altura mínima para el bloque de tags para equilibrar visualmente */
+
 .project-card .tags {
-    min-height: 52px; /* Ajusta según el alto de 2 filas de tags */
+    min-height: 52px; 
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
