@@ -1,0 +1,23 @@
+graph TD
+    A[KoboToolbox Microdata] -->|API Sync| B[Data Ingestion Layer]
+    C[Public Space Inventory Units] -->|Spatial Import| B
+    B -->|ETL Process| D[(PostgreSQL Database)]
+    D -->|Query| E[Automated Baseline Analytics]
+    E -->|Multi-dimensional Scoring| F[Diagnostic Evaluation Engine]
+    F -->|SQL-driven Analysis| G[Analytics Results]
+    G -->|Planning Rules| H[Action Plan Generator]
+    H -->|Parameterized Output| I[Dashboard Synthesis Engine]
+    I -->|Dynamic View Staging| J[Interactive Dashboard]
+    J -->|Visualizations| K[User Interface]
+    
+    style A fill:#f0f9ff,stroke:#38bdf8
+    style C fill:#f0f9ff,stroke:#38bdf8
+    style B fill:#ecfeff,stroke:#22d3ee
+    style D fill:#f5f3ff,stroke:#a78bfa
+    style E fill:#fef2f2,stroke:#f87171
+    style F fill:#fef2f2,stroke:#f87171
+    style G fill:#fef2f2,stroke:#f87171
+    style H fill:#fff7ed,stroke:#fb923c
+    style I fill:#fff7ed,stroke:#fb923c
+    style J fill:#f0fdf4,stroke:#4ade80
+    style K fill:#f0fdf4,stroke:#4ade80

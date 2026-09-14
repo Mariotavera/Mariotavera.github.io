@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0f172a"/>
+  
+  <!-- H3 Hexagonal Grid -->
+  <g stroke="#00a884" stroke-width="1.5" fill="none" opacity="0.18">
+    <polygon points="400,130 440,153 440,198 400,221 360,198 360,153"/>
+    <polygon points="480,130 520,153 520,198 480,221 440,198 440,153"/>
+    <polygon points="320,130 360,153 360,198 320,221 280,198 280,153"/>
+    <polygon points="440,203 480,226 480,271 440,294 400,271 400,226"/>
+    <polygon points="360,203 400,226 400,271 360,294 320,271 320,226"/>
+    <polygon points="520,203 560,226 560,271 520,294 480,271 480,226"/>
+    <polygon points="280,203 320,226 320,271 280,294 240,271 240,226"/>
+    <polygon points="400,276 440,299 440,344 400,367 360,344 360,299"/>
+  </g>
+
+  <!-- Highlighting Focal H3 Cell -->
+  <polygon points="400,203 440,226 440,271 400,294 360,271 360,226" fill="#00a884" fill-opacity="0.3" stroke="#00a884" stroke-width="2.5"/>
+
+  <!-- Decision Flow Line -->
+  <path d="M 180,248 L 360,248 M 440,248 L 620,248" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6,6"/>
+  <circle cx="180" cy="248" r="5" fill="#38bdf8"/>
+  <circle cx="400" cy="248" r="7" fill="#00a884"/>
+  <circle cx="620" cy="248" r="5" fill="#38bdf8"/>
+</svg>

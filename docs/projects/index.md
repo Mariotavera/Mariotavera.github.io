@@ -16,32 +16,59 @@ CHECKLIST FOR THIS PAGE:
 
 A selection of my geospatial projects. Click any card to see the full write-up.
 
-<div class="grid" markdown>
+<div class="grid projects-grid" markdown>
 
 <div class="project-card" markdown>
-![](../assets/images/placeholder-project.png)
+![](../assets/images/project1-svg.svg)
 
-**[Sample Project](sample-project.md)**
+**[Multi-Dimensional Urban Diagnosis & Strategic Planning](project-1.md)**
 
-[YOUR PROJECT DESCRIPTION — one or two sentences: what you did, what data you used,
-and what you found or built.]
 
-`[TOOL 1]` `[TOOL 2]` `[TOOL 3]`
+A multi-scalar diagnostic framework developed at UN-Habitat Urban Lab to evaluate territorial dynamics, climate vulnerability, and sustainable urban development indicators using Uber H3 discrete global grid systems in data-scarce contexts.
 
-[View Project →](sample-project.md){ .md-button }
+`ArcMap` `QGIS` `Uber H3` `Network Analysis` `Hazard Assesment` `Evironmental Analytics` `Strategic Urban Planning` `UN Habitat`
+
+[View Project →](project-1.md){ .md-button }
 </div>
 
 <div class="project-card" markdown>
-![](../assets/images/placeholder-notebook.png)
+![](../assets/images/project2-svg.svg)
 
-**[Sample Notebook](sample-notebook.ipynb)**
+**[Automated Public Space Scoring for Action Plan Development](projects/project-2.md)**
 
-[YOUR PROJECT DESCRIPTION — one or two sentences: what you did, what data you used,
-and what you found or built.]
+An automated spatial database engine built for UN-Habitat Jordan to evaluate urban public space quality, process high-density field microdata, and dynamically generate benchmark-driven municipal investment public space action plans.
 
-`Python` `pandas` `Folium`
 
-[View Project →](sample-notebook.ipynb){ .md-button }
+`PostGIS` `PostgreSQL` `VSpatial Analytics` `Data Engineering` `KoboToolbox` `Urban Planning` `KoboToolbox` `UN Habitat`
+
+[View Project →](project-2.md){ .md-button }
+</div>
+
+<div class="project-card" markdown>
+![](../assets/images/project3-svg.svg)
+
+**[Localized Spatial Analytics Engine for SDG 11.7.1 Monitoring](project-3.md)**
+
+A containerized, decentralized locally deployed spatial analytics engine engineered to model pedestrian network accessibility to public spaces (SDG 11.7.1), enabling real-time scenario simulation while guaranteeing total demographic data sovereignty.
+
+`Python` `Streamlit` `Docker` `GeoPandas` `OSMnx` `Uber H3` `SDGs`
+
+[View Project →](project-3.md){ .md-button }
+</div>
+
+
+<div class="project-card" markdown>
+![](../assets/images/project4-svg.svg)
+
+**[Cloud-Native Satellite Image Analysis](notebook-1.ipynb)**
+
+A reproducible Python workflow connecting to Cloud STAC APIs (Sentinel-2 / Planetary Computer) to query raster assets on-the-fly, calculate spectral indexes (NDVI/NDBI), explore correlation among spatial variables, and create data visualizations.
+
+`Python` `pandas` `Folium` `Xarray` `Sentinel-2`
+
+
+
+[View Project →](notebook-1.ipynb){ .md-button }
 </div>
 
 </div>

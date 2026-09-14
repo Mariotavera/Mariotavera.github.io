@@ -1,4 +1,4 @@
-# Geospatial Portfolio Template
+# Geospatial Portfolio
 
 A ready-to-use portfolio website template for geospatial professionals — GIS analysts, remote
 sensing specialists, spatial data scientists, and GeoAI practitioners. Built with

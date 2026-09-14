@@ -1,0 +1,25 @@
+graph TD
+    subgraph S1["1. Multi-Criteria Inputs Integration"]
+        A1["Phase 1 Synthetic Diagnostic Scores<br/><i>(Severity Metrics & Unit Valuation)</i>"]
+        A2["Planner Benchmarks & Spatial Structure<br/><i>(Nodes, Corridors & Neighborhood Limits)</i>"]
+    end
+
+    subgraph S2["2. PostGIS Strategic Processing Engine"]
+        A1 & A2 --> B1["Automated Benchmark Joins<br/><i>(Relational Queries via Composite Keys)</i>"]
+        B1 --> B2["Spatial Overlay & Translation<br/><i>(Urban Structure x Governance Boundaries)</i>"]
+        B2 --> B3["Analytical Temporal Phasing Engine<br/><i>(Short, Medium & Long-Term Phasing)</i>"]
+    end
+
+    subgraph S3["3. Executive Staging & Output"]
+        B3 --> C1["Dynamic PostGIS View Staging<br/><i>(Real-Time Multi-Score Aggregation)</i>"]
+        C1 --> C2["Interactive Web Dashboard<br/><i>(Multi-Score Sorting & Cluster Selection)</i>"]
+    end
+
+    %% Paleta de colores coherente con el sistema visual
+    classDef inputPhase1 fill:#ffebee,stroke:#ef5350,stroke-width:1.5px,color:#b71c1c;
+    classDef phase2Engine fill:#fff3e0,stroke:#ffa726,stroke-width:1.5px,color:#e65100;
+    classDef outputGreen fill:#e8f5e9,stroke:#66bb6a,stroke-width:1.5px,color:#1b5e20;
+
+    class A1,A2 inputPhase1;
+    class B1,B2,B3 phase2Engine;
+    class C1,C2 outputGreen;
