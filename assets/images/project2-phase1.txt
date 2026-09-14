@@ -1,0 +1,27 @@
+graph TD
+    subgraph S1["1. Parallel Input Staging"]
+        A1[Spatial Boundaries Setup<br/><i>Cadastral Polygons & Centerlines</i>]
+        A2[KoboToolbox Survey Instrument<br/><i>Analytical Framework Aligned</i>]
+    end
+
+    subgraph S2["2. Ingestion & Normalization"]
+        B1[Data Ingestion Layer<br/><i>PostgreSQL / PostGIS Engine</i>]
+        A1 --> B1
+        A2 --> B1
+        B1 --> B2[(PostgreSQL Database<br/><i>Normalized Schema Mapping</i>)]
+    end
+
+    subgraph S3["3. Baseline Diagnostic Engine"]
+        B2 --> C1[Automated Baseline Analytics<br/><i>SQL Multi-dimensional Scoring</i>]
+        C1 --> C2[Diagnostic Evaluation Engine<br/><i>Custom Formulas & Subdimension Weights</i>]
+        C2 --> C3[Diagnostic Synthesis<br/><i>Quantifiable Indicators & Maps</i>]
+    end
+
+    %% Mapeo exacto de la paleta de tu diagrama macro
+    classDef inputStyle fill:#e0f7fa,stroke:#00bcd4,stroke-width:1.5px,color:#006064;
+    classDef dbStyle fill:#f3e5f5,stroke:#ab47bc,stroke-width:1.5px,color:#4a148c;
+    classDef phase1Style fill:#ffebee,stroke:#ef5350,stroke-width:1.5px,color:#b71c1c;
+
+    class A1,A2 inputStyle;
+    class B1,B2 dbStyle;
+    class C1,C2,C3 phase1Style;

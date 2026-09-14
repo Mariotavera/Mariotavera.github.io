@@ -1,0 +1,181 @@
+.profile-photo {
+  border-radius: 8px; /* Cambia a 0px si la quieres completamente cuadrada */
+    width: 350px;        /* Ajusta el tamaño según tu preferencia */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.hero {
+display: flex;
+  align-items: center;              
+  gap: 2.2rem;                        
+  padding: 1.75rem 2rem;
+  background-color: #f8fafc;         
+  border: 1px solid #e2e8f0;         
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.2rem 0 !important;  
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--md-default-fg-color);
+}
+
+.hero-text h2 {
+  margin: 0 0 0.75rem 0 !important; 
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+.hero p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color--light);
+}
+
+.hero + hr {
+  margin-top: 0.5rem;
+}
+
+/* About Me Section */
+.about-image {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.about-image img {
+  width: 100%;
+  height: 500px;               
+  object-fit: cover;
+  object-position: center 60%; 
+  border-radius: 8px;
+  display: block;
+}
+
+/* Align buttons side-by-side */
+.about-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .about-image img {
+    height: 180px;
+  }
+  
+  .about-actions {
+    flex-direction: column;
+  }
+}
+
+/* Timeline on the Experience page */
+.timeline {
+  padding-left: 1.75rem;
+  border-left: 3px solid var(--md-primary-fg-color--light);
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  left: -2.2rem;
+  top: 0.45rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: var(--md-primary-fg-color);
+  border: 2px solid var(--md-default-bg-color);
+}
+
+.timeline-entry h3 {
+  margin-top: 0;
+}
+
+/* Skills grid cards on the Home page */
+.md-typeset .grid.cards > ul > li {
+  background-color: #f0f7ff;
+}
+
+/* Project cards on the Projects gallery page */
+.project-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f0f7ff;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+/* Fuerza la cuadrícula a tener 2 columnas estricta en pantallas medianas y grandes */
+.projects-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 1.5rem;
+}
+
+/* En celulares se adapta automáticamente a 1 columna */
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Justificar el texto de los párrafos en todo el sitio */
+.md-typeset p {
+  text-align: justify !important;
+  text-justify: inter-word; /* Distribución uniforme de espacios */
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+}
+
+/* Opcional: si solo quieres justificar las páginas de contenido/proyectos */
+.md-content p {
+  text-align: justify !important;
+}
+
+/* 1. Asegurar que las tarjetas sean contenedores Flex verticales del mismo alto */
+.grid-container .card,
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 2. Forzar al área del botón/pie de tarjeta a alinearse abajo */
+.project-card .btn-container,
+.project-card a.button,
+.project-card .view-project-btn {
+    margin-top: auto; /* Esto empuja el botón al fondo de la tarjeta */
+}
+
+/* 3. Fijar una altura mínima para el bloque de tags para equilibrar visualmente */
+.project-card .tags {
+    min-height: 52px; /* Ajusta según el alto de 2 filas de tags */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 6px;
+    margin-bottom: 12px;
+}
